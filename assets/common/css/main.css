@@ -139,4 +139,14 @@ table {
 /**
 * Variables
 */
+/**
+* Layout
+*/
+.background {
+  background: url("/assets/images/mobile/image-host.jpg");
+}
+
+/**
+* 
+*/
 /*# sourceMappingURL=main.css.map */
