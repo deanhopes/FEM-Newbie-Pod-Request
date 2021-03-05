@@ -150,6 +150,17 @@ table {
   background-attachment: fixed;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: 80%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 /**
 * 
 */
