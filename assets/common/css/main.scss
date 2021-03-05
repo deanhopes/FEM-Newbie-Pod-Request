@@ -10,6 +10,11 @@
 
 // Fonts
 $font-family: 'Chivo', sans-serif;
+$font-weight: 300;
+$font-size-title: 52px;
+$font-size-body: 18px;
+$line-height-title: 62px;
+$line-height-body: 28px;
 
 // Colors
 $mint-green: #54e6af;
@@ -25,7 +30,7 @@ $lilac-grey: #c2cbe5;
 
 body {
   font-family: $font-family;
-  color: white;
+  color: $white;
 }
 
 /**
