@@ -11,10 +11,10 @@
 // Fonts
 $font-family: 'Chivo', sans-serif;
 $font-weight: 300;
-$font-size-title: 52px;
-$font-size-body: 18px;
-$line-height-title: 62px;
-$line-height-body: 28px;
+$font-size-title__mobile: 26px;
+$font-size-body__mobile: 15px;
+$line-height-title__mobile: 38px;
+$line-height-body__mobile: 25px;
 
 // Colors
 $mint-green: #54e6af;
@@ -35,13 +35,13 @@ body {
 }
 
 h1 {
-  font-size: $font-size-title;
-  line-height: $line-height-title;
+  font-size: $font-size-title__mobile;
+  line-height: $line-height-title__mobile;
 }
 
 p {
-  font-size: $font-size-body;
-  line-height: $line-height-body;
+  font-size: $font-size-body__mobile;
+  line-height: $line-height-body__mobile;
 }
 
 /**
