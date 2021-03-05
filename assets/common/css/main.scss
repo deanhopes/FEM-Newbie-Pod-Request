@@ -1,11 +1,22 @@
 /**
 * Imports
 */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 @import '_reset';
 
 /**
 * Variables
 */
+$font-family: 'Chivo', sans-serif;
+
+/**
+* Main
+*/
+
+body {
+  font-family: $font-family;
+  color: white;
+}
 
 /**
 * Layout
