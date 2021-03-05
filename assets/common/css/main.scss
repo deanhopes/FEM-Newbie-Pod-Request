@@ -1,7 +1,7 @@
 /**
 * Imports
 */
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
 @import '_reset';
 
 /**
@@ -39,6 +39,8 @@ h1 {
   font-size: $font-size-title__mobile;
   line-height: $line-height-title__mobile;
   text-align: center;
+  width: 80%;
+  justify-self: center;
   .h1-green {
     color: $mint-green;
   }
@@ -48,6 +50,8 @@ p {
   font-size: $font-size-body__mobile;
   line-height: $line-height-body__mobile;
   text-align: center;
+  justify-self: center;
+  width: 80%;
 }
 
 /**
@@ -63,37 +67,64 @@ p {
 }
 
 .container {
-  display: grid;
-  grid-gap: 16px;
-  margin: auto;
-  width: 80%;
+  margin: 3.5rem 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
-  margin: auto;
+  margin: auto auto 3rem;
 }
 
 .logos {
-  display: inline-grid;
-  grid-template-columns: 50px 50px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: 68.75px 58.75px 138.75px 98.75px;
+  margin: 0 auto;
   &_scale {
     padding-right: 10rem;
-    height: 60%;
+    height: 65%;
     width: auto;
+    justify-self: start;
   }
 }
 
+.grid {
+  display: grid;
+}
+
+form {
+  // justify-content: center;
+  width: 80%;
+}
+
 input {
-  width: 60vw;
-  border-radius: 28px;
+  width: 100%;
+  padding: 1rem 2rem;
   background-color: $dark-grey;
   border-style: none;
-  padding: 1rem 2rem;
+  border-radius: 28px;
 }
 
 input::placeholder {
+  font-size: 14px;
   color: $lilac-grey;
   margin-left: 1rem;
+  font-weight: 400;
+}
+
+button {
+  justify-self: center;
+  width: 100%;
+  background-color: $mint-green;
+  border-style: none;
+  border-radius: 28px;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  padding: 0.5rem auto;
+  .button-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 /**
