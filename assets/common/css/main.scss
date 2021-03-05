@@ -35,8 +35,13 @@ body {
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: $font-size-title__mobile;
   line-height: $line-height-title__mobile;
+  text-align: center;
+  .h1-green {
+    color: $mint-green;
+  }
 }
 
 p {
@@ -59,7 +64,7 @@ p {
 .container {
   display: grid;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .logo {
