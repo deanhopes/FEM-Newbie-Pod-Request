@@ -145,7 +145,18 @@ table {
 */
 body {
   font-family: "Chivo", sans-serif;
+  font-weight: 300;
   color: #ffffff;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 62px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /**
@@ -164,10 +175,6 @@ body {
   display: grid;
   margin: auto;
   width: 80%;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .logo {
@@ -175,14 +182,15 @@ body {
 }
 
 .logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 50px 50px 50px 50px 50px;
+      grid-template-columns: 50px 50px 50px 50px 50px;
 }
 
 .logos_scale {
-  padding-right: 1rem;
-  height: 25%;
+  padding-right: 10rem;
+  height: 60%;
   width: auto;
 }
 
