@@ -64,6 +64,7 @@ p {
 
 .container {
   display: grid;
+  grid-gap: 16px;
   margin: auto;
   width: 80%;
 }
@@ -80,6 +81,19 @@ p {
     height: 60%;
     width: auto;
   }
+}
+
+input {
+  width: 60vw;
+  border-radius: 28px;
+  background-color: $dark-grey;
+  border-style: none;
+  padding: 1rem 2rem;
+}
+
+input::placeholder {
+  color: $lilac-grey;
+  margin-left: 1rem;
 }
 
 /**
