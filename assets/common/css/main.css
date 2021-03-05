@@ -163,6 +163,7 @@ h1 .h1-green {
 p {
   font-size: 15px;
   line-height: 25px;
+  text-align: center;
 }
 
 /**
@@ -180,7 +181,7 @@ p {
   display: -ms-grid;
   display: grid;
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 
 .logo {

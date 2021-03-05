@@ -47,6 +47,7 @@ h1 {
 p {
   font-size: $font-size-body__mobile;
   line-height: $line-height-body__mobile;
+  text-align: center;
 }
 
 /**
@@ -64,7 +65,7 @@ p {
 .container {
   display: grid;
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 
 .logo {
