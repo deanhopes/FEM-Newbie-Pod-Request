@@ -143,7 +143,10 @@ table {
 * Layout
 */
 .background {
-  background: url("/assets/images/mobile/image-host.jpg");
+  background-image: url("/assets/images/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /**
