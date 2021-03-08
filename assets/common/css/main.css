@@ -169,6 +169,7 @@ p {
   text-align: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  color: #c2cbe5;
 }
 
 /**
@@ -267,6 +268,7 @@ button {
   margin-top: 1rem;
   padding: 0.5rem auto;
   width: 85vw;
+  cursor: pointer;
 }
 
 button .button-text {

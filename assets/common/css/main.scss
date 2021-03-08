@@ -51,6 +51,7 @@ p {
   line-height: $line-height-body__mobile;
   text-align: center;
   justify-self: center;
+  color: $lilac-grey;
   // width: 80%;
 }
 
@@ -121,6 +122,7 @@ button {
   margin-top: 1rem;
   padding: 0.5rem auto;
   width: 85vw;
+  cursor: pointer;
   .button-text {
     font-size: 14px;
     font-weight: 400;
