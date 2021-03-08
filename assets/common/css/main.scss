@@ -88,7 +88,7 @@ p {
     @media (min-width: 768px) {
       display: flex;
       position: absolute;
-      z-index: -1;
+      z-index: -2;
       left: 100px;
       top: 0px;
     }
@@ -111,6 +111,11 @@ p {
     @media (min-width: 768px) {
       display: flex;
       background-color: $almost-black;
+      width: 690px;
+      height: 540px;
+      top: 222px;
+      position: absolute;
+      z-index: -1;
     }
   }
   &-desktop {

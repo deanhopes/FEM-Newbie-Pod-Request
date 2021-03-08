@@ -221,7 +221,7 @@ p {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     left: 100px;
     top: 0px;
   }
@@ -249,6 +249,11 @@ p {
     display: -ms-flexbox;
     display: flex;
     background-color: #121725;
+    width: 690px;
+    height: 540px;
+    top: 222px;
+    position: absolute;
+    z-index: -1;
   }
 }
 
