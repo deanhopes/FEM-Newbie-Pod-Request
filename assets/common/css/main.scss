@@ -51,7 +51,7 @@ p {
   line-height: $line-height-body__mobile;
   text-align: center;
   justify-self: center;
-  width: 80%;
+  // width: 80%;
 }
 
 /**
@@ -78,22 +78,21 @@ p {
 
 .logos {
   display: grid;
-  grid-template-columns: 68.75px 58.75px 138.75px 98.75px;
+  grid-auto-flow: column;
   margin: 0 auto;
   &_scale {
-    padding-right: 10rem;
-    height: 65%;
-    width: auto;
+    height: auto;
+    width: 80%;
     justify-self: start;
   }
 }
 
 .grid {
   display: grid;
+  grid-gap: 16px;
 }
 
 form {
-  // justify-content: center;
   width: 80%;
 }
 
@@ -121,6 +120,7 @@ button {
   padding: 1rem 0;
   margin-top: 1rem;
   padding: 0.5rem auto;
+  width: 85vw;
   .button-text {
     font-size: 14px;
     font-weight: 400;

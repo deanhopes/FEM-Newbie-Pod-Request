@@ -169,7 +169,6 @@ p {
   text-align: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 80%;
 }
 
 /**
@@ -200,15 +199,13 @@ p {
 .logos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 68.75px 58.75px 138.75px 98.75px;
-      grid-template-columns: 68.75px 58.75px 138.75px 98.75px;
+  grid-auto-flow: column;
   margin: 0 auto;
 }
 
 .logos_scale {
-  padding-right: 10rem;
-  height: 65%;
-  width: auto;
+  height: auto;
+  width: 80%;
   -ms-grid-column-align: start;
       justify-self: start;
 }
@@ -216,6 +213,7 @@ p {
 .grid {
   display: -ms-grid;
   display: grid;
+  grid-gap: 16px;
 }
 
 form {
@@ -268,6 +266,7 @@ button {
   padding: 1rem 0;
   margin-top: 1rem;
   padding: 0.5rem auto;
+  width: 85vw;
 }
 
 button .button-text {
