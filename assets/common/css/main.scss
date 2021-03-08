@@ -71,6 +71,7 @@ p {
   margin: 3.5rem 2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -80,7 +81,7 @@ p {
 .logos {
   display: grid;
   grid-auto-flow: column;
-  margin: 0 auto;
+  margin: 1rem auto 1rem;
   &_scale {
     height: auto;
     width: 80%;
