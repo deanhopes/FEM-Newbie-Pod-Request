@@ -40,7 +40,7 @@ h1 {
   line-height: $line-height-title__mobile;
   text-align: center;
   width: 80%;
-  justify-self: start;
+  justify-self: center;
   .h1-green {
     color: $mint-green;
   }
@@ -48,6 +48,7 @@ h1 {
     text-align: start;
     font-size: 48px;
     line-height: 56px;
+    justify-self: start;
   }
 }
 
@@ -81,14 +82,47 @@ p {
   }
 }
 
-.background-tablet {
+.background {
+  &-tablet {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      left: 280px;
+      top: 140px;
+    }
+  }
+  &-desktop {
+    display: none;
+    @media (min-width: 1080px) {
+      display: flex;
+      position: absolute;
+      z-index: -2;
+      left: 570px;
+      top: 130px;
+    }
+  }
+}
+
+.rectangle {
   display: none;
-  @media (min-width: 768px) {
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    left: 280px;
-    top: 140px;
+  &-tablet {
+    @media (min-width: 768px) {
+      display: flex;
+      background-color: $almost-black;
+    }
+  }
+  &-desktop {
+    @media (min-width: 1080px) {
+      display: flex;
+      background-color: $almost-black;
+      width: 880px;
+      height: 530px;
+      top: 190px;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 
@@ -97,12 +131,18 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media (min-width: 1080px) {
+    margin: 3.5rem 9rem;
+  }
 }
 
 .logo {
   margin: auto auto 3rem;
   @media (min-width: 768px) {
     margin: 1rem 0 10rem;
+  }
+  @media (min-width: 768px) {
+    margin: 0 0 10rem;
   }
 }
 
@@ -179,6 +219,10 @@ button {
   }
   @media (min-width: 768px) {
     width: 50%;
+  }
+  @media (min-width: 1080px) {
+    width: 50%;
+    // font-weight: bold;
   }
 }
 
