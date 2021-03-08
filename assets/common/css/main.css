@@ -155,12 +155,20 @@ h1 {
   line-height: 38px;
   text-align: center;
   width: 80%;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 h1 .h1-green {
   color: #54e6af;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    text-align: start;
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 p {
@@ -170,6 +178,17 @@ p {
   -ms-grid-column-align: center;
       justify-self: center;
   color: #c2cbe5;
+}
+
+@media (min-width: 768px) {
+  p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 28px;
+    width: 70%;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
 }
 
 /**
@@ -215,14 +234,36 @@ p {
       justify-self: start;
 }
 
+@media (min-width: 768px) {
+  .logos {
+    margin: 1rem 0 1rem;
+    grid-row-end: 5;
+  }
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
   grid-gap: 16px;
 }
 
+@media (min-width: 768px) {
+  .grid {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 form {
   width: 80%;
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 50%;
+    position: relative;
+  }
 }
 
 input {
@@ -261,10 +302,15 @@ input::placeholder {
   font-weight: 400;
 }
 
+form button {
+  position: absolute;
+  top: -18px;
+  right: -64px;
+}
+
 button {
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 100%;
   background-color: #54e6af;
   border-style: none;
   border-radius: 28px;
@@ -278,6 +324,12 @@ button {
 button .button-text {
   font-size: 14px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  button {
+    width: 50%;
+  }
 }
 
 /**
