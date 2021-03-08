@@ -76,6 +76,20 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  @media (min-width: 768px) {
+    background: linear-gradient(($almost-black, $almost-black));
+  }
+}
+
+.background-tablet {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 280px;
+    top: 140px;
+  }
 }
 
 .container {
@@ -87,6 +101,9 @@ p {
 
 .logo {
   margin: auto auto 3rem;
+  @media (min-width: 768px) {
+    margin: 1rem 0 10rem;
+  }
 }
 
 .logos {
@@ -101,6 +118,7 @@ p {
   @media (min-width: 768px) {
     margin: 1rem 0 1rem;
     grid-row-end: 5;
+    justify-content: start;
   }
 }
 
@@ -109,7 +127,8 @@ p {
   grid-gap: 16px;
   @media (min-width: 768px) {
     justify-content: start;
-    width: 80%;
+    width: 92%;
+    grid-gap: 36px;
   }
 }
 
@@ -137,9 +156,11 @@ input::placeholder {
 }
 
 form button {
-  position: absolute;
-  top: -18px;
-  right: -64px;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: -18px;
+    right: -64px;
+  }
 }
 
 button {
