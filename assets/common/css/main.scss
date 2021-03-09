@@ -181,6 +181,9 @@ p {
     height: auto;
     width: 80%;
     justify-self: start;
+    @media (min-width: 768px) {
+      width: 110%;
+    }
     @media (min-width: 1440px) {
       width: 110%;
     }
@@ -189,6 +192,7 @@ p {
     margin: 1rem 0 1rem;
     grid-row-end: 5;
     justify-content: start;
+    grid-gap: 36px;
   }
   @media (min-width: 1080px) {
     grid-gap: 66px;
@@ -202,6 +206,7 @@ p {
     justify-content: start;
     width: 92%;
     grid-gap: 36px;
+    margin: 0 1rem;
   }
   @media (min-width: 1080px) {
     width: 75%;
@@ -242,8 +247,8 @@ form button {
   }
   @media (min-width: 768px) {
     position: absolute;
-    top: -18px;
-    right: -64px;
+    top: -8px;
+    right: -55px;
   }
   @media (min-width: 1080px) {
     width: 45%;
