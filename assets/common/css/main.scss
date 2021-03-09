@@ -225,6 +225,8 @@ input {
   background-color: $dark-grey;
   border-style: none;
   border-radius: 28px;
+  font-size: 14px;
+  color: $lilac-grey;
 }
 
 input::placeholder {
@@ -235,7 +237,7 @@ input::placeholder {
 }
 
 form button {
-  :hover {
+  &:hover {
     background-color: #b3ffe2;
   }
   @media (min-width: 768px) {
@@ -271,7 +273,6 @@ button {
   }
   @media (min-width: 1080px) {
     width: 43%;
-    // font-weight: bold;
   }
 }
 
