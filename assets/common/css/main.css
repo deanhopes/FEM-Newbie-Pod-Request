@@ -265,7 +265,8 @@ p {
     background-color: #121725;
     width: 880px;
     height: 530px;
-    top: 190px;
+    top: 270px;
+    left: 34px;
     position: absolute;
     z-index: -1;
   }
@@ -283,6 +284,13 @@ p {
     position: absolute;
     top: 994px;
     z-index: -2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dot-pattern {
+    top: 724px;
+    left: 1259px;
   }
 }
 
@@ -362,6 +370,13 @@ p {
   }
 }
 
+@media (min-width: 1080px) {
+  .grid {
+    padding: 5.7rem 0;
+    width: 65%;
+  }
+}
+
 form {
   width: 80%;
 }
@@ -370,6 +385,12 @@ form {
   form {
     width: 50%;
     position: relative;
+  }
+}
+
+@media (min-width: 1080px) {
+  form {
+    width: 58%;
   }
 }
 

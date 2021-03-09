@@ -124,7 +124,8 @@ p {
       background-color: $almost-black;
       width: 880px;
       height: 530px;
-      top: 190px;
+      top: 270px;
+      left: 34px;
       position: absolute;
       z-index: -1;
     }
@@ -138,6 +139,10 @@ p {
     position: absolute;
     top: 994px;
     z-index: -2;
+  }
+  @media (min-width: 1440px) {
+    top: 724px;
+    left: 1259px;
   }
 }
 
@@ -185,6 +190,10 @@ p {
     width: 92%;
     grid-gap: 36px;
   }
+  @media (min-width: 1080px) {
+    padding: 5.7rem 0;
+    width: 65%;
+  }
 }
 
 form {
@@ -192,6 +201,9 @@ form {
   @media (min-width: 768px) {
     width: 50%;
     position: relative;
+  }
+  @media (min-width: 1080px) {
+    width: 58%;
   }
 }
 
