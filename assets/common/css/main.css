@@ -147,6 +147,8 @@ body {
   font-family: "Chivo", sans-serif;
   font-weight: 300;
   color: #ffffff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -323,7 +325,7 @@ p {
 
 @media (min-width: 1080px) {
   .container {
-    margin: 7.5rem 9rem;
+    margin: 5.5rem 9rem;
   }
 }
 
@@ -435,6 +437,13 @@ input {
   border-radius: 28px;
   font-size: 14px;
   color: #c2cbe5;
+  height: 0%;
+}
+
+@media (min-width: 768px) {
+  input {
+    height: 20%;
+  }
 }
 
 input::-webkit-input-placeholder {
